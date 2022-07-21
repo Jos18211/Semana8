@@ -349,35 +349,36 @@
                                         <option value="" selected>- Cálculos Realizados -</option>
                                     </select>
                                     <br>
-                                    <input type="button" value="M">
+                                    <input  onclick="registrarMemoriaLocal()" type="button" value="M">
                                     <input type="button" value="S">
-                                    <input type="button" value="(">
-                                    <input type="button" value=")">
+                                    <input onclick="concatenaOperacion('(')" type="button" value="(">
+                                    <input onclick="concatenaOperacion(')')" type="button" value=")">
                                     <br>
-                                    <input type="button" value="P">
-                                    <input type="button" value="R">
-                                    <input type="button" value="L">
+                                    <input onclick="funcionesEspeciales('p') "   type="button" value="P">
+                                    <input onclick="funcionesEspeciales('P')  "   type="button" value="P">
+                                    <input onclick="funcionesEspeciales('R')  "  type="button" value="R">
+                                    <input onclick="funcionesEspeciales('L')  "   type="button" value="L">
                                     <input type="button" value="%">
                                     <br>
-                                    <input type="button" value="1">
-                                    <input type="button" value="2">
-                                    <input type="button" value="3">
-                                    <input type="button" value="+">
+                                    <input onclick="concatenaOperacion(1)" type="button" value="1">
+                                    <input onclick="concatenaOperacion(2)" type="button" value="2">
+                                    <input onclick="concatenaOperacion(3)" type="button" value="3">
+                                    <input onclick="concatenaOperacion('+')" type="button" value="+">
                                     <br>
-                                    <input type="button" value="4">
-                                    <input type="button" value="5">
-                                    <input type="button" value="6">
-                                    <input type="button" value="-">
+                                    <input onclick="concatenaOperacion(4)" type="button" value="4">
+                                    <input onclick="concatenaOperacion(5)" type="button" value="5">
+                                    <input onclick="concatenaOperacion(6)" type="button" value="6">
+                                    <input onclick="concatenaOperacion('-')" type="button" value="-">
                                     <br>
-                                    <input type="button" value="7">
-                                    <input type="button" value="8">
-                                    <input type="button" value="9">
-                                    <input type="button" value="*">
+                                    <input onclick="concatenaOperacion(7)" type="button" value="7">
+                                    <input onclick="concatenaOperacion(8)" type="button" value="8">
+                                    <input onclick="concatenaOperacion(9)" type="button" value="9">
+                                    <input onclick="concatenaOperacion('*')" type="button" value="*">
                                     <br>
                                     <input type="button" value="0">
                                     <input type="reset" value="C">
                                     <input type="button" value="/">
-                                    <input type="button" value="=">
+                                    <input onclick="ejecutaExprecion()" type="button" value="=">
                                 </form>
 
                             </div>
@@ -412,7 +413,7 @@
                                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2" >Unde praesentium sed</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
@@ -532,19 +533,24 @@
                     <div class="col-lg-3">
                         <ul class="nav nav-tabs flex-column">
                             <li class="nav-item">
-                                <a  name="1" class="nav-link active show specialsPer-listItem" data-bs-toggle="tab" href="#tab-p">Modi sit est</a>
+                                <a name="1" class="nav-link active show specialsPer-listItem" data-bs-toggle="tab"
+                                    href="#tab-p">Modi sit est</a>
                             </li>
                             <li class="nav-item">
-                                <a name="2" class="nav-link  specialsPer-listItem" data-bs-toggle="tab" href="#tab-o">Unde praesentium sed</a>
+                                <a name="2" class="nav-link  specialsPer-listItem" data-bs-toggle="tab"
+                                    href="#tab-o">Unde praesentium sed</a>
                             </li>
                             <li class="nav-item">
-                                <a name="3" class="nav-link specialsPer-listItem" data-bs-toggle="tab" href="#tab-p">Pariatur explicabo vel</a>
+                                <a name="3" class="nav-link specialsPer-listItem" data-bs-toggle="tab"
+                                    href="#tab-p">Pariatur explicabo vel</a>
                             </li>
                             <li class="nav-item">
-                                <a name="4" class="nav-link specialsPer-listItem" data-bs-toggle="tab" href="#tab-p">Nostrum qui quasi</a>
+                                <a name="4" class="nav-link specialsPer-listItem" data-bs-toggle="tab"
+                                    href="#tab-p">Nostrum qui quasi</a>
                             </li>
                             <li class="nav-item">
-                                <a name="5" class="nav-link specialsPer-listItem" data-bs-toggle="tab" href="#tab-p">Iusto ut expedita aut</a>
+                                <a name="5" class="nav-link specialsPer-listItem" data-bs-toggle="tab"
+                                    href="#tab-p">Iusto ut expedita aut</a>
                             </li>
                         </ul>
                     </div>
@@ -1183,6 +1189,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dom.js"></script>
+    <script src="assets/js/calculadora.js"></script>
 
 </body>
 
